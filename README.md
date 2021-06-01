@@ -12,7 +12,7 @@ pip3 install -r requirements/dev.txt
 
 Далее необходимо переименовать `example.env` в `.env` указав полученные в интерфейсе Slak коды доступа
 
-Константу `CRYPTO_KEY` вы можете получить следующим образом:
+Значение константы `CRYPTO_KEY` вы можете сгенерировать следующим образом:
 ```python
 from cryptography.fernet import Fernet
 key = Fernet.generate_key()
